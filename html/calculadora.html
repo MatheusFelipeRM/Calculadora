@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+    <script src="../javascript/javascript.js"></script>
+    <H1> MY CALCULATOR</H1>
+    <div class="calculaora">
+        <p id="resultado"></p>
+        
+    <!--Eu teri que montar uma tabela por que se lembrar a calculadora e uma tabela ela tem linhas e colunas-->
+<table>
+
+<tr><!--Linha-->
+    <td><button class="botao" onclick="clean()">C</button></td><!--Coluna-->
+    <td><button class="botao" onclick="insert('/')">/</button></td>
+    <td><button class="botao" onclick="insert('*')">*</button></td>
+    <td><button class="botao" onclick="insert('-')">-</button></td>
+</tr>
+<tr><!--Linha-->
+    <td><button class="botao" onclick="insert('7')">7</button></td><!--Coluna-->
+    <td><button class="botao" onclick="insert('8')">8</button></td>
+    <td><button class="botao" onclick="insert('9')">9</button></td>
+    <td rowspan="2"><button style="height: 106px;" class="botao" onclick="insert('+')">+</button></td>
+    <!--Eu coloquei o rowspan para fazer a tecla "+" ocupar a quantiade de linha que eu quisese-->
+</tr>
+<tr><!--Linha-->
+    <td><button class="botao" onclick="insert('4')">4</button></td><!--Coluna-->
+    <td><button class="botao" onclick="insert('5')">5</button></td>
+    <td><button class="botao" onclick="insert('6')">6</button></td>
+</tr>
+<tr><!--Linha-->
+    <td><button class="botao" onclick="insert('1')">1</button></td><!--Coluna-->
+    <td><button class="botao" onclick="insert('2')">2</button></td>
+    <td><button class="botao" onclick="insert('3')">3</button></td>
+    <td rowspan="2"><button style="height: 106px;" class="botao" onclick="calcular()" style="background: red;">=</button></td>
+    <!--Eu coloquei o rowspan para fazer a tecla "=" ocupar a quantiade de linha que eu quisese-->
+</tr>
+<tr><!--Linha-->
+    <td><button class="botao" onclick="insert('.')">.</button></td><!--Coluna-->
+    <td colspan="2"><button style="width: 106px;" class="botao">0</button></td>
+    <!--Eu coloquei o clospan para fazer a tecla "0" ocupar a quantiade de coluna que eu quisese-->
+
+</tr>
+
+
+</table>
+</div>
+</body>
+</html>
